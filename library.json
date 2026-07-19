@@ -1,0 +1,38 @@
+{
+    "name": "KSJ_Display",
+    "version": "0.1.0",
+    "description": "Reusable graphics-device abstraction with SSD1306 display support for Arduino-compatible embedded projects.",
+    "keywords": [
+        "display",
+        "oled",
+        "ssd1306",
+        "graphics",
+        "esp32",
+        "arduino"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KSJain/KSJ_Display.git"
+    },
+    "authors": [
+        {
+            "name": "Kartikeya Jain",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif32",
+        "espressif8266"
+    ],
+    "dependencies": {
+        "adafruit/Adafruit GFX Library": "^1.12.6",
+        "adafruit/Adafruit SSD1306": "^2.5.17",
+        "adafruit/Adafruit BusIO": "^1.17.4"
+    },
+    "headers": [
+        "IGraphicsDevice.h",
+        "KSJ_SSD1306Display.h"
+    ]
+}

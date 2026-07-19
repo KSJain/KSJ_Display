@@ -9,17 +9,10 @@ namespace Pins
     constexpr uint8_t SCL = 22;
 }
 
-namespace DisplayConfig
-{
-    constexpr uint8_t WIDTH = 128;
-    constexpr uint8_t HEIGHT = 64;
-    constexpr uint8_t ADDRESS = 0x3C;
-}
-
 KSJ::SSD1306Display display(
-    DisplayConfig::WIDTH,
-    DisplayConfig::HEIGHT,
-    DisplayConfig::ADDRESS
+    128,
+    64,
+    0x3C
 );
 
 void setup()
@@ -67,6 +60,7 @@ void setup()
 
     display.update();
 
+    // Demonstrates access to the complete Adafruit SSD1306 API.
     display.native().invertDisplay(false);
 
     Serial.println("Display initialized successfully.");
