@@ -9,10 +9,17 @@ namespace Pins
     constexpr uint8_t SCL = 22;
 }
 
+namespace DisplayConfig
+{
+    constexpr uint8_t WIDTH = 128;
+    constexpr uint8_t HEIGHT = 64;
+    constexpr uint8_t ADDRESS = 0x3C;
+}
+
 KSJ::SSD1306Display display(
-    128,
-    64,
-    0x3C
+    DisplayConfig::WIDTH,
+    DisplayConfig::HEIGHT,
+    DisplayConfig::ADDRESS
 );
 
 void setup()
